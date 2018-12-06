@@ -29,9 +29,8 @@
 }
 
 .header__grid {
-    grid-area: header;
-
-
+  width: 100%;
+  grid-area: header;
 }
 
 .banner__grid {
@@ -83,21 +82,11 @@
 
 /* ------ menubar-----*/
 
-header {
-
+.header {
     font-family: itc-american-typewriter-cond, serif;
     font-weight: 700;
     font-style: normal;
     font-size: 16pt;
-    z-index: 1;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 85px;
-    background-color: white;
-
-
 }
 
 
@@ -378,7 +367,7 @@ footer li {
 
 
 
-    header {
+    /* header {
 
         font-family: bello-pro, sans-serif;
         font-weight: 400;
@@ -394,7 +383,7 @@ footer li {
         background-color: white;
 
 
-    }
+    } */
     /*navbar*/
     
     /*skal være siplay none*/
