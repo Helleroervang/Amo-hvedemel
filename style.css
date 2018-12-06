@@ -1,0 +1,438 @@
+/*------grid---------*/
+
+.container {
+    max-width: 1224px;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "banner"
+        "indhold"
+        "opskrifter"
+        "proev"
+        "galleri"
+        "widgets"
+        "footer";
+    margin: auto;
+}
+
+.billeder {
+    max-width: 200%;
+
+}
+
+.centrer__indhold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__grid {
+    grid-area: header;
+
+
+}
+
+.banner__grid {
+    grid-area: banner;
+
+
+}
+
+.indhold__grid {
+    grid-area: indhold;
+    padding: 20px;
+
+}
+
+.opskrifter__grid {
+    grid-area: opskrifter;
+
+}
+
+.proev__grid {
+    grid-area: proev;
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+
+.galleri__grid {
+    grid-area: galleri;
+
+
+
+}
+
+.widgets__grid {
+    grid-area: widgets;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin: 30px;
+}
+
+
+.footer__grid {
+    grid-area: footer;
+
+}
+
+
+
+/* ------ menubar-----*/
+
+header {
+
+    font-family: itc-american-typewriter-cond, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16pt;
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 85px;
+    background-color: white;
+
+
+}
+
+
+
+.dropbtn {
+    background-color: white;
+    color: #e20019;
+    padding: 25px;
+    border: none;
+
+}
+
+.dropdown {
+    position: fixed;
+    display: inline-block;
+    float: left;
+
+}
+
+.dropdown-content {
+    display: none;
+    padding: 30px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #e20019;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: orange;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: orange;
+}
+
+.logo {
+    width: 90px;
+    z-index: 1;
+    float: right;
+    display: inline-flex;
+}
+
+.billeder {
+    width: 100%;
+    height: auto;
+}
+
+.indhold {
+    padding-top: 85px;
+}
+
+/* -----tekst ---*/
+
+.broedtekst {
+    font-family: itc-american-typewriter, serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+h1 {
+    font-family: itc-american-typewriter-cond, serif;
+    font-weight: 700;
+    font-size: 15pt;
+    font-style: normal;
+    font-style: normal;
+    color: #e20019;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h4 {
+    font-family: itc-american-typewriter-cond, serif;
+    font-weight: 700;
+    font-size: 15pt;
+    font-style: normal;
+    font-style: normal;
+    color: black;
+    margin-left: 40px;
+    margin-right: 20px;
+    display: inline
+}
+
+.billedetekst {
+    font-size: 15pt;
+    color: #2b2119;
+    display: inline-block;
+    float: left;
+    bottom: 4px;
+    left: 5px;
+    position: absolute;
+}
+
+.tekstboks {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Galleri-------*/
+
+.gallery {
+    width: 50%;
+    float: right;
+
+}
+
+.left {
+    width: 50%;
+
+}
+
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+.left img {
+
+    width: 100%;
+    height: auto;
+}
+
+.galleri__tekst {
+    padding: 10px;
+    text-align: center;
+    font-family: itc-american-typewriter-cond, serif;
+    font-weight: 600;
+    font-size: 15pt;
+    font-style: normal;
+    font-style: normal;
+    color: wheat;
+    background: rgba(191, 0, 0, 0.7);
+
+}
+
+
+/* News widgets ------ */
+
+.widget__left {}
+
+.widget__right {
+    margin-bottom: 60px;
+
+}
+
+
+.widget__facebook {
+    padding: 1px;
+    text-align: center;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-size: 16pt;
+    font-style: normal;
+    font-style: normal;
+    color: white;
+    background-color: #4267b2;
+
+
+}
+
+.widget__insta {
+    padding: 1px;
+    text-align: center;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-size: 16pt;
+    font-style: normal;
+    font-style: normal;
+    color: white;
+    background-color: #8a3ab9;
+
+
+}
+
+/*footer------*/
+
+
+.footer {
+    background-color: #b67c32;
+    color: black;
+    padding-bottom: 20px;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 500;
+    font-size: 15pt;
+    font-style: normal;
+    font-style: normal;
+
+
+}
+
+.ikoner {
+    float: right;
+    padding-left: 15px;
+
+}
+
+.footer__indhold {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer li {
+    list-style: none;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    /*.container {
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "header header  header"
+            "nav    content sidebar"
+            "nav    content ad"
+            "footer footer  footer"
+    }
+
+    .nav__liste {
+        flex-direction: column;
+    }
+    */
+
+
+
+    /*widgets */
+    .widget__left {
+        width: 48%;
+        /* border: 2px solid #8a3ab9;*/
+
+
+    }
+
+    .widget__right {
+        width: 48%;
+        float: right;
+        /*border: 2px solid #4267b2;*/
+    }
+
+    /*widgets */
+
+}
+
+@media only screen and (min-width:1224px) {
+    
+    .container {
+    max-width: 1224px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+        "header header"
+        "banner banner"
+        "indhold indhold"
+        "proev proev"
+        "opskrifter galleri"
+        "widgets widgets"
+        "footer footer";
+    margin: auto;
+}
+
+
+
+
+    header {
+
+        font-family: bello-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-style: normal;
+        font-size: 16pt;
+        z-index: 1;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 85px;
+        background-color: white;
+
+
+    }
+    /*navbar*/
+    
+    /*skal være siplay none*/
+    .dropbtn {
+    background-color: white;
+    color: #e20019;
+    padding: 25px;
+    border: none;
+        display: none;
+    
+
+}
+
+.dropdown {
+    flex-direction: row;
+    display: inline;
+    float: left;
+
+}
+
+.dropdown-content {
+    flex-direction: row;
+    padding: 10px;
+    position:relative;
+    background-color: white;
+    box-shadow:none;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #e20019;
+    display:inline-block;
+
+}
+
+.dropdown .dropdown-content {
+    display:inline-block;
+
+
+}
+}
